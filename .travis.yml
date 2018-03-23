@@ -1,0 +1,12 @@
+language: bash
+
+cache:
+  directories:
+  - fastText
+  - data
+
+before_script:
+    - sh init.sh
+
+script:
+    - sh run.sh
