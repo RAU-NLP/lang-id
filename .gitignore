@@ -1,3 +1,5 @@
+fastText/
+
 # data files
 *.bz2
 *.ft.txt
