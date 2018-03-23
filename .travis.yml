@@ -3,6 +3,7 @@ language: bash
 cache:
   directories:
   - data
+  - fastText
 
 before_script:
     - sh init.sh
