@@ -6,14 +6,11 @@ do
   sh "$file"
 done
 
-if [ ! -d fastText ] ; then
-    printf "\n\nDOWNLOADING FASTTEXT...\n"
-    git clone https://github.com/facebookresearch/fastText.git
-fi
-
 if [ ! -f fastText/fasttext ]; then
-    printf "\n\nBUILDING FASTTEXT...\n"
+    printf "\n\nDOWNLOADING FASTTEXT...\n"
     cd fastText
+    git pull
+    printf "\n\nBUILDING FASTTEXT...\n"
     make
     cd ..
 fi
