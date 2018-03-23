@@ -8,24 +8,11 @@ The model is supervised classification for language identification.
 
 The dataset included in the repo is 4 Wikipedia pages.  The training set is the text from en.wikipedia.org/wiki/Nikola_Tesla and es.wikipedia.org/wiki/Nikola_Tesla, and the test set is the text from en.wikipedia.org/wiki/Beet and es.wikipedia.org/wiki/Cerveza.  Each line is simply labelled English or Spanish in the fastText format.
 
-On submit the scripts are run by Travis CI, a continuous integration service free for open-source repos.  Each run takes only a few seconds.  With the default parameters, the resulting prediction model's accuracy on the test set is 76.6%.
+On submit the scripts are run by Travis CI, a continuous integration service free for open-source repos.  Each run takes only a few seconds.  With the default parameters, the resulting prediction model's accuracy on the test set is about 75%.
 
 #### Viewing the results
 
 Visit [travis-ci.org/RAU-NLP/lang-id](https://travis-ci.org/RAU-NLP/lang-id/builds), click a build and view the *Job log*
-```
-TRAINING MODEL...
-Read 289M words
-Number of words:  5165173
-Number of labels: 2
-Progress: 100.0% words/sec/thread: 2959292 lr:  0.000000 loss:  0.238979 ETA:   0h 0m
-
-TESTING MODEL...
-N	400000
-P@1	0.916
-R@1	0.916
-Number of examples: 400000
-```
 
 ```
 TRAINING MODEL...
